@@ -1,11 +1,11 @@
 # Submarine Museum
 
-Submarine Museum is a visionOS app for exploring historic submarines with 2D content, 3D volumetric inspection, and a full immersive scene.
+Submarine Museum is a visionOS app for exploring historic submarines in a 2D window, a 3D volume, and an immersive RealityKit scene.
 
 ## What the app includes
 
 - A main window (`Modules`) with four modules: `Explore`, `Catalog`, `Favorites`, and `Immersive`.
-- A volumetric window (`SceneID.exploreVolume`) that loads a submarine model in `RealityView`, with tappable hotspots and waypoints.
+- A volume (`SceneID.exploreVolume`) that loads a submarine model in `RealityView`, with tappable hotspots and waypoints.
 - An immersive space (`SceneID.submarineImmersive`) for full-scale viewing and waypoint teleport controls.
 - A gallery image window (`SceneID.galleryImageWindow`) that opens selected exhibit photos in a dedicated window with Spatial Photo support.
 - A catalog flow with search and filtering by era/nation, plus exhibit detail pages.
@@ -35,3 +35,7 @@ Unit tests live in `SubmarineMuseum/SubmarineMuseumTests/` and currently cover:
 - Submarine repository loading/decoding behavior
 - Detail status and entity configuration behavior
 - Hotspot and waypoint position decoding
+
+## Development tip
+
+- Set `showDebugSettings` to `true` in order to display the settings ornament that allows for real time changing of 3D content settings. Should be `false` for release.
