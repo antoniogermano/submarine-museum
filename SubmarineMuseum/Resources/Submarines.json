@@ -1,0 +1,621 @@
+[
+    {
+        "id": "uss-gato-ss-212",
+        "name": "USS Gato",
+        "submarineClass": {
+            "id": "gato-class",
+            "name": "Gato-class",
+            "role": "Fleet submarine",
+            "notes": "Workhorse of the U.S. Pacific submarine force in WWII."
+        },
+        "era": "World War II",
+        "nation": "United States",
+        "commissionYear": 1941,
+        "decommissionYear": 1960,
+        "lengthMeters": 95.02,
+        "displacementTons": 1525,
+        "status": "Museum ship",
+        "summary": "USS Gato (SS-212) led the class of American fleet submarines that defined U.S. undersea warfare in the Pacific.",
+        "profileImageName": "SubmarineProfiles/SS-212",
+        "detailStatus": "full",
+        "model3D": {
+            "usdzName": "USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray",
+            "displayName": "USS Gato SS-212"
+        },
+        "hotspots": [
+            {
+                "id": "gato-bow",
+                "title": "Bow Section",
+                "detail": "Forward torpedo room and pressure hull bow structure.",
+                "position": [0.0, 3.8, 45.0]
+            },
+            {
+                "id": "gato-conning",
+                "title": "Conning Tower",
+                "detail": "Navigation and command position for surface operations.",
+                "position": [0.0, 15.0, 13.5]
+            },
+            {
+                "id": "gato-stern",
+                "title": "Stern Section",
+                "detail": "Propulsion and steering assemblies at the aft.",
+                "position": [0.0, -0.66, -46]
+            }
+        ],
+        "waypoints": [
+            {
+                "id": "gato-bow",
+                "title": "Bow Section",
+                "detail": "Forward torpedo room and pressure hull bow structure.",
+                "position": [10.0, 0.0, 45.0]
+            },
+            {
+                "id": "gato-machine",
+                "title": "Machine gun",
+                "detail": "Machine gun use for surface operations.",
+                "position": [-1.0, 9.21, 11.79]
+            },
+            {
+                "id": "gato-stern",
+                "title": "Stern Section",
+                "detail": "Propulsion and steering assemblies at the aft.",
+                "position": [-1.51, 0.0, -46]
+            }
+        ],
+        "exhibitSections": [
+            {
+                "id": "gato-design",
+                "title": "Design & Capabilities",
+                "body": "Gato-class boats balanced endurance, speed, and torpedo load for long patrols across the Pacific.",
+                "order": 1
+            },
+            {
+                "id": "gato-service",
+                "title": "Service History",
+                "body": "Commissioned in 1941, USS Gato completed multiple wartime patrols before transitioning to training roles.",
+                "order": 2
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "gato_bridge",
+                "title": "Bridge",
+                "caption": "Periscope and control surfaces for surface operations.",
+                "imageName": "USS_Gato0821201"
+            },
+            {
+                "id": "gato_bridge2",
+                "title": "Bridge",
+                "caption": "Periscope and control surfaces for surface operations.",
+                "imageName": "USS_Gato;0821235"
+            },
+            {
+                "id": "gato_bridge3",
+                "title": "Bridge",
+                "caption": "Periscope and control surfaces for surface operations.",
+                "imageName": "19-N-49790_-_The_Gato_(SS-212)"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "gato-nhds",
+                "title": "Naval History and Heritage Command",
+                "url": "https://www.history.navy.mil/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "gato-museum",
+                "name": "USS Gato Submarine",
+                "city": "Manitowoc",
+                "region": "Wisconsin",
+                "country": "United States",
+                "kind": "museum",
+                "latitude": 44.0885,
+                "longitude": -87.6563,
+                "notes": "Wisconsin Maritime Museum."
+            },
+            {
+                "id": "gato-build",
+                "name": "Manitowoc Shipbuilding Heritage",
+                "city": "Manitowoc",
+                "region": "Wisconsin",
+                "country": "United States",
+                "kind": "historicalSite",
+                "latitude": 44.0880,
+                "longitude": -87.6550,
+                "notes": "Region where Gato-class boats were built." 
+            }
+        ]
+    },
+    {
+        "id": "uss-nautilus-ssn-571",
+        "name": "USS Nautilus",
+        "submarineClass": {
+            "id": "nautilus",
+            "name": "Nautilus",
+            "role": "Nuclear-powered attack submarine",
+            "notes": "First nuclear-powered submarine."
+        },
+        "era": "Cold War",
+        "nation": "United States",
+        "commissionYear": 1954,
+        "decommissionYear": 1980,
+        "lengthMeters": 97.5,
+        "displacementTons": 4040,
+        "status": "Museum ship",
+        "summary": "USS Nautilus (SSN-571) pioneered nuclear propulsion and completed the first under-ice transit of the North Pole.",
+        "profileImageName": "SubmarineProfiles/USS-Nautilus",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "nautilus-nuclear",
+                "title": "Nuclear Propulsion",
+                "body": "Reactor power enabled longer, faster, and more stealthy patrols than diesel-electric predecessors.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "nautilus_control",
+                "title": "Control Room",
+                "caption": "The heart of navigation and combat control.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "nautilus-museum",
+                "title": "Submarine Force Museum",
+                "url": "https://www.navymuseum.org/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "nautilus-groton",
+                "name": "Submarine Force Library & Museum",
+                "city": "Groton",
+                "region": "Connecticut",
+                "country": "United States",
+                "kind": "museum",
+                "latitude": 41.3832,
+                "longitude": -72.0865,
+                "notes": "Nautilus is berthed on the Thames River."
+            },
+            {
+                "id": "nautilus-northpole",
+                "name": "North Pole Route",
+                "city": "Arctic Ocean",
+                "region": "Arctic",
+                "country": "International",
+                "kind": "historicalSite",
+                "latitude": 90.0000,
+                "longitude": 0.0000,
+                "notes": "1958 under-ice transit location."
+            }
+        ]
+    },
+    {
+        "id": "hms-alliance",
+        "name": "HMS Alliance",
+        "submarineClass": {
+            "id": "a-class-amp",
+            "name": "A-class (Amphion)",
+            "role": "Fleet submarine",
+            "notes": "Royal Navy post-war diesel-electric design."
+        },
+        "era": "Post-War",
+        "nation": "United Kingdom",
+        "commissionYear": 1947,
+        "decommissionYear": 1973,
+        "lengthMeters": 85.4,
+        "displacementTons": 1710,
+        "status": "Museum ship",
+        "summary": "HMS Alliance represents late WWII design adapted for post-war service and training.",
+        "profileImageName": "SubmarineProfiles/HMS-Alliance",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "alliance-life",
+                "title": "Life Aboard",
+                "body": "Tight quarters and long patrols defined the daily routine for Royal Navy submariners.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "alliance_torpedo",
+                "title": "Torpedo Room",
+                "caption": "Forward torpedo tubes and reloads.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "alliance-hms",
+                "title": "Royal Navy Submarine Museum",
+                "url": "https://www.nmrn.org.uk/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "alliance-gosport",
+                "name": "Royal Navy Submarine Museum",
+                "city": "Gosport",
+                "region": "Hampshire",
+                "country": "United Kingdom",
+                "kind": "museum",
+                "latitude": 50.7960,
+                "longitude": -1.1069,
+                "notes": "Museum at Haslar Marina."
+            },
+            {
+                "id": "alliance-portsmouth",
+                "name": "Portsmouth Harbour",
+                "city": "Portsmouth",
+                "region": "Hampshire",
+                "country": "United Kingdom",
+                "kind": "historicalSite",
+                "latitude": 50.8100,
+                "longitude": -1.1010,
+                "notes": "Operational base region."
+            }
+        ]
+    },
+    {
+        "id": "u-995",
+        "name": "U-995",
+        "submarineClass": {
+            "id": "type-vii",
+            "name": "Type VII C",
+            "role": "Ocean-going attack submarine",
+            "notes": "Most-produced German U-boat type."
+        },
+        "era": "World War II",
+        "nation": "Germany",
+        "commissionYear": 1943,
+        "decommissionYear": 1945,
+        "lengthMeters": 67.1,
+        "displacementTons": 769,
+        "status": "Museum ship",
+        "summary": "U-995 is a preserved Type VIIC U-boat, representing one of the most common submarine designs of WWII.",
+        "profileImageName": "SubmarineProfiles/U-995",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "u995-combat",
+                "title": "U-boat Warfare",
+                "body": "Type VII boats hunted Allied convoys across the Atlantic in coordinated wolfpacks.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "u995_tower",
+                "title": "Conning Tower",
+                "caption": "Surface navigation and attack position.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "u995-laboe",
+                "title": "Naval Memorial Laboe",
+                "url": "https://www.laboe-naval-memorial.com/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "u995-laboe-museum",
+                "name": "Naval Memorial Laboe",
+                "city": "Laboe",
+                "region": "Schleswig-Holstein",
+                "country": "Germany",
+                "kind": "museum",
+                "latitude": 54.4061,
+                "longitude": 10.2199,
+                "notes": "U-995 is on display at the memorial."
+            },
+            {
+                "id": "u995-kiel",
+                "name": "Kiel Fjord",
+                "city": "Kiel",
+                "region": "Schleswig-Holstein",
+                "country": "Germany",
+                "kind": "historicalSite",
+                "latitude": 54.3233,
+                "longitude": 10.1228,
+                "notes": "Operational region for U-boat deployment." 
+            }
+        ]
+    },
+    {
+        "id": "ijn-i-400",
+        "name": "I-400",
+        "submarineClass": {
+            "id": "sen-toku",
+            "name": "Sen-Toku",
+            "role": "Submarine aircraft carrier",
+            "notes": "Largest submarines of WWII."
+        },
+        "era": "World War II",
+        "nation": "Japan",
+        "commissionYear": 1944,
+        "decommissionYear": 1945,
+        "lengthMeters": 122.0,
+        "displacementTons": 5223,
+        "status": "Scrapped (museum exhibits remain)",
+        "summary": "The I-400 class carried aircraft in a sealed hangar, enabling long-range strike missions.",
+        "profileImageName": "SubmarineProfiles/I-400",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "i400-aircraft",
+                "title": "Aircraft Hangar",
+                "body": "The hangar stored fold-wing aircraft launched from a deck catapult.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "i400_model",
+                "title": "Scale Model",
+                "caption": "Reconstruction of the hangar and flight deck.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "i400-uss-intrepid",
+                "title": "Intrepid Sea, Air & Space Museum",
+                "url": "https://www.intrepidmuseum.org/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "i400-pearl",
+                "name": "Pearl Harbor",
+                "city": "Honolulu",
+                "region": "Hawaii",
+                "country": "United States",
+                "kind": "historicalSite",
+                "latitude": 21.3648,
+                "longitude": -157.9502,
+                "notes": "I-400 was surrendered and inspected after WWII."
+            },
+            {
+                "id": "i400-puget",
+                "name": "Puget Sound Naval Shipyard",
+                "city": "Bremerton",
+                "region": "Washington",
+                "country": "United States",
+                "kind": "shipyard",
+                "latitude": 47.5615,
+                "longitude": -122.6526,
+                "notes": "Postwar examination site." 
+            }
+        ]
+    },
+    {
+        "id": "le-redoutable",
+        "name": "Le Redoutable",
+        "submarineClass": {
+            "id": "redoutable",
+            "name": "Redoutable",
+            "role": "Ballistic missile submarine",
+            "notes": "First French SSBN."
+        },
+        "era": "Cold War",
+        "nation": "France",
+        "commissionYear": 1971,
+        "decommissionYear": 1991,
+        "lengthMeters": 128.0,
+        "displacementTons": 8900,
+        "status": "Museum ship",
+        "summary": "Le Redoutable served as France’s first nuclear deterrent submarine.",
+        "profileImageName": "SubmarineProfiles/Le-Redoutable",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "redoutable-deterrent",
+                "title": "Strategic Deterrent",
+                "body": "Ballistic missile submarines formed the backbone of France’s naval deterrence.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "redoutable_missile",
+                "title": "Missile Compartment",
+                "caption": "A preserved section of the missile bay.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "redoutable-cite",
+                "title": "Cité de la Mer",
+                "url": "https://www.citedelamer.com/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "redoutable-cherbourg",
+                "name": "Cité de la Mer",
+                "city": "Cherbourg",
+                "region": "Normandy",
+                "country": "France",
+                "kind": "museum",
+                "latitude": 49.6443,
+                "longitude": -1.6222,
+                "notes": "Le Redoutable is a centerpiece exhibit."
+            },
+            {
+                "id": "redoutable-brest",
+                "name": "Brest Naval Base",
+                "city": "Brest",
+                "region": "Brittany",
+                "country": "France",
+                "kind": "historicalSite",
+                "latitude": 48.3794,
+                "longitude": -4.4861,
+                "notes": "Operational base for French submarines." 
+            }
+        ]
+    },
+    {
+        "id": "uss-growler-ssg-577",
+        "name": "USS Growler",
+        "submarineClass": {
+            "id": "grayback-class",
+            "name": "Grayback-class",
+            "role": "Guided missile submarine",
+            "notes": "Early Cold War cruise-missile platform."
+        },
+        "era": "Cold War",
+        "nation": "United States",
+        "commissionYear": 1958,
+        "decommissionYear": 1964,
+        "lengthMeters": 98.5,
+        "displacementTons": 2850,
+        "status": "Museum ship",
+        "summary": "USS Growler carried Regulus cruise missiles and now serves as a rare guided missile submarine museum.",
+        "profileImageName": "SubmarineProfiles/USS-Growler",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "growler-missiles",
+                "title": "Regulus Missiles",
+                "body": "Large cruise missiles were stored in the forward hangar and launched from the deck.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "growler_hangar",
+                "title": "Missile Hangar",
+                "caption": "Launch prep area and guidance systems.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "growler-intrepid",
+                "title": "Intrepid Museum",
+                "url": "https://www.intrepidmuseum.org/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "growler-nyc",
+                "name": "Intrepid Sea, Air & Space Museum",
+                "city": "New York",
+                "region": "New York",
+                "country": "United States",
+                "kind": "museum",
+                "latitude": 40.7645,
+                "longitude": -73.9996,
+                "notes": "Growler is berthed at Pier 86."
+            },
+            {
+                "id": "growler-bremerton",
+                "name": "Puget Sound Naval Shipyard",
+                "city": "Bremerton",
+                "region": "Washington",
+                "country": "United States",
+                "kind": "shipyard",
+                "latitude": 47.5615,
+                "longitude": -122.6526,
+                "notes": "Conversion and maintenance history." 
+            }
+        ]
+    },
+    {
+        "id": "hmcs-ojibwa",
+        "name": "HMCS Ojibwa",
+        "submarineClass": {
+            "id": "oberon-class",
+            "name": "Oberon-class",
+            "role": "Diesel-electric patrol submarine",
+            "notes": "Export design used by several navies."
+        },
+        "era": "Cold War",
+        "nation": "Canada",
+        "commissionYear": 1965,
+        "decommissionYear": 1998,
+        "lengthMeters": 90.0,
+        "displacementTons": 2030,
+        "status": "Museum ship",
+        "summary": "HMCS Ojibwa is a preserved Oberon-class submarine representing Canada’s Cold War fleet.",
+        "profileImageName": "SubmarineProfiles/HMCS-Ojibwa",
+        "detailStatus": "stub",
+        "model3D": null,
+        "hotspots": [],
+        "waypoints": [],
+        "exhibitSections": [
+            {
+                "id": "ojibwa-patrol",
+                "title": "Cold War Patrols",
+                "body": "Quiet diesel-electric operations supported NATO exercises and surveillance.",
+                "order": 1
+            }
+        ],
+        "galleryItems": [
+            {
+                "id": "ojibwa_berth",
+                "title": "Crew Berths",
+                "caption": "Compact living quarters for long patrols.",
+                "imageName": "USS_Gato0821201"
+            }
+        ],
+        "referenceLinks": [
+            {
+                "id": "ojibwa-museum",
+                "title": "Elgin Military Museum",
+                "url": "https://www.elginmilitarymuseum.ca/"
+            }
+        ],
+        "locations": [
+            {
+                "id": "ojibwa-portburwell",
+                "name": "Port Burwell Marine Museum",
+                "city": "Port Burwell",
+                "region": "Ontario",
+                "country": "Canada",
+                "kind": "museum",
+                "latitude": 42.6427,
+                "longitude": -80.8053,
+                "notes": "Ojibwa is docked on Lake Erie."
+            },
+            {
+                "id": "ojibwa-halifax",
+                "name": "Halifax Harbour",
+                "city": "Halifax",
+                "region": "Nova Scotia",
+                "country": "Canada",
+                "kind": "historicalSite",
+                "latitude": 44.6488,
+                "longitude": -63.5752,
+                "notes": "Home port region during service." 
+            }
+        ]
+    }
+]

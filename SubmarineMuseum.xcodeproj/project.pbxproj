@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		434BE9512F4A869A003833F7 /* MuseumModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9502F4A869A003833F7 /* MuseumModels.swift */; };
+		434BE9532F4A86A6003833F7 /* SubmarineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9522F4A86A6003833F7 /* SubmarineRepository.swift */; };
+		434BE9552F4A86F1003833F7 /* Submarines.json in Resources */ = {isa = PBXBuildFile; fileRef = 434BE9542F4A86F1003833F7 /* Submarines.json */; };
+		434BE95A2F4A87E8003833F7 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9592F4A87E8003833F7 /* CatalogView.swift */; };
+		434BE95C2F4A87F1003833F7 /* ExhibitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE95B2F4A87F1003833F7 /* ExhibitDetailView.swift */; };
+		434BE95E2F4A89CD003833F7 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE95D2F4A89CD003833F7 /* FavoritesStore.swift */; };
+		434BE9622F4A8A6D003833F7 /* SceneIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9612F4A8A6D003833F7 /* SceneIDs.swift */; };
+		434BE9642F4A8A75003833F7 /* SectionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9632F4A8A75003833F7 /* SectionViews.swift */; };
+		434BE9682F4A8DF8003833F7 /* ExhibitRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9672F4A8DF8003833F7 /* ExhibitRoute.swift */; };
+		434BE96A2F4A8E26003833F7 /* StubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9692F4A8E26003833F7 /* StubDetailView.swift */; };
+		434BE96C2F4A8E30003833F7 /* SubmarineThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE96B2F4A8E30003833F7 /* SubmarineThumbnail.swift */; };
+		434BE9702F4A929E003833F7 /* HotspotComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE96F2F4A929E003833F7 /* HotspotComponent.swift */; };
+		434BE9722F4A92B3003833F7 /* SubmarineExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9712F4A92B3003833F7 /* SubmarineExploreView.swift */; };
+		434BE9A22F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */; };
+		437DFC2C2F4CDA7C007527D9 /* WaypointComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC2B2F4CDA7C007527D9 /* WaypointComponent.swift */; };
+		437DFC2E2F4CDAC4007527D9 /* ExploreWaypointSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC2D2F4CDAC4007527D9 /* ExploreWaypointSettings.swift */; };
+		437DFC322F4CE4C6007527D9 /* SubmarineEntity+Waypoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC312F4CE4C1007527D9 /* SubmarineEntity+Waypoints.swift */; };
+		437DFC6A2F4D3D0C007527D9 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC692F4D3D0C007527D9 /* AppIconView.swift */; };
+		43BA5EF72F4BC7A100E782EF /* YOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5EF62F4BC7A100E782EF /* YOffsetModifier.swift */; };
+		43BA5EF92F4C168000E782EF /* ExploreModelSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5EF82F4C168000E782EF /* ExploreModelSettings.swift */; };
+		43BA5EFB2F4C168000E782EF /* ExhibitPreviewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5EFA2F4C168000E782EF /* ExhibitPreviewSettings.swift */; };
+		43BA5EFD2F4C168000E782EF /* ExploreHotspotSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5EFC2F4C168000E782EF /* ExploreHotspotSettings.swift */; };
+		43BA5EFF2F4C1F1400E782EF /* SubmarineEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5EFE2F4C1F1400E782EF /* SubmarineEntity.swift */; };
+		43BA5F012F4C1F1400E782EF /* SubmarineEntity+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F002F4C1F1400E782EF /* SubmarineEntity+Configuration.swift */; };
+		43BA5F032F4C253A00E782EF /* SubmarineEntity+Hotspots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F022F4C253A00E782EF /* SubmarineEntity+Hotspots.swift */; };
+		43BA5F062F4C25E200E782EF /* SubmarineImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F052F4C25E200E782EF /* SubmarineImmersiveView.swift */; };
+		43BA5F082F4C25E200E782EF /* SubmarineImmersiveToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F072F4C25E200E782EF /* SubmarineImmersiveToggle.swift */; };
+		43BA5F262F4C496800E782EF /* GalleryImageWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F252F4C496800E782EF /* GalleryImageWindowView.swift */; };
+		43BA5F282F4C4C5700E782EF /* SpatialSceneSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F272F4C4C5700E782EF /* SpatialSceneSupport.swift */; };
+		43BA5F2C2F4C502500E782EF /* GalleryImageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F2B2F4C502500E782EF /* GalleryImageSettings.swift */; };
+		43BA5F2E2F4C5C8F00E782EF /* SubmarineRotationGestureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F2D2F4C5C8F00E782EF /* SubmarineRotationGestureModifier.swift */; };
+		43BA5F302F4C831300E782EF /* FavoritesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F2F2F4C831300E782EF /* FavoritesSectionView.swift */; };
+		43BA5F322F4C832500E782EF /* SubmarineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F312F4C832500E782EF /* SubmarineCard.swift */; };
+		43BA5F362F4C928B00E782EF /* SubmarineModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F352F4C928B00E782EF /* SubmarineModelCache.swift */; };
+		B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */; };
+		B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */; };
+		C200227F29883B3900732240 /* ExploreSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200227E29883B3900732240 /* ExploreSettings.swift */; };
+		C22D1AF228EB403400CE0F8F /* SubmarineMuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22D1AF128EB403400CE0F8F /* SubmarineMuseumApp.swift */; };
+		C22D1AF628EB403600CE0F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22D1AF528EB403600CE0F8F /* Assets.xcassets */; };
+		C22D1AF928EB403600CE0F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C22D1AF828EB403600CE0F8F /* Preview Assets.xcassets */; };
+		C25774DB29E23F8D00A75567 /* ExploreModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25774DA29E23F8D00A75567 /* ExploreModule.swift */; };
+		C258918F2975EB7E0071BD5F /* SliderGridRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258918E2975EB7E0071BD5F /* SliderGridRow.swift */; };
+		C2A0F2B029D115150009D46C /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0F2AF29D115150009D46C /* SettingsButton.swift */; };
+		C2A823622A8591FC006F6AFF /* ExploreToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A823612A8591FC006F6AFF /* ExploreToggle.swift */; };
+		C2CD36432A3A7682003811D3 /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD36422A3A7682003811D3 /* ModuleCard.swift */; };
+		C2D21553294D210B00634A99 /* ExploreVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D21552294D210B00634A99 /* ExploreVolume.swift */; };
+		C2E652D62919EBAB007934BC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E652D52919EBAB007934BC /* ViewModel.swift */; };
+		C2F31EF829CA8F4E009742AD /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31EF729CA8F4E009742AD /* Modules.swift */; };
+		C2F31EFC29CC01BC009742AD /* TableOfContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31EFB29CC01BC009742AD /* TableOfContents.swift */; };
+		C2F31EFE29CC02D7009742AD /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31EFD29CC02D7009742AD /* Module.swift */; };
+		C2F31F0029CC0858009742AD /* ModuleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F31EFF29CC0858009742AD /* ModuleDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43BA5EE22F4BC0F700E782EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C22D1AE628EB403400CE0F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C22D1AED28EB403400CE0F8F;
+			remoteInfo = World;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		434BE9502F4A869A003833F7 /* MuseumModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumModels.swift; sourceTree = "<group>"; };
+		434BE9522F4A86A6003833F7 /* SubmarineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineRepository.swift; sourceTree = "<group>"; };
+		434BE9542F4A86F1003833F7 /* Submarines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Submarines.json; sourceTree = "<group>"; };
+		434BE9592F4A87E8003833F7 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		434BE95B2F4A87F1003833F7 /* ExhibitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitDetailView.swift; sourceTree = "<group>"; };
+		434BE95D2F4A89CD003833F7 /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		434BE9612F4A8A6D003833F7 /* SceneIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneIDs.swift; sourceTree = "<group>"; };
+		434BE9632F4A8A75003833F7 /* SectionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViews.swift; sourceTree = "<group>"; };
+		434BE9672F4A8DF8003833F7 /* ExhibitRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitRoute.swift; sourceTree = "<group>"; };
+		434BE9692F4A8E26003833F7 /* StubDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubDetailView.swift; sourceTree = "<group>"; };
+		434BE96B2F4A8E30003833F7 /* SubmarineThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineThumbnail.swift; sourceTree = "<group>"; };
+		434BE96F2F4A929E003833F7 /* HotspotComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotComponent.swift; sourceTree = "<group>"; };
+		434BE9712F4A92B3003833F7 /* SubmarineExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineExploreView.swift; sourceTree = "<group>"; };
+		434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz"; sourceTree = "<group>"; };
+		437DFC2B2F4CDA7C007527D9 /* WaypointComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointComponent.swift; sourceTree = "<group>"; };
+		437DFC2D2F4CDAC4007527D9 /* ExploreWaypointSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreWaypointSettings.swift; sourceTree = "<group>"; };
+		437DFC312F4CE4C1007527D9 /* SubmarineEntity+Waypoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubmarineEntity+Waypoints.swift"; sourceTree = "<group>"; };
+		437DFC692F4D3D0C007527D9 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
+		43BA5EDE2F4BC0F700E782EF /* SubmarineMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubmarineMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BA5EF62F4BC7A100E782EF /* YOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOffsetModifier.swift; sourceTree = "<group>"; };
+		43BA5EF82F4C168000E782EF /* ExploreModelSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModelSettings.swift; sourceTree = "<group>"; };
+		43BA5EFA2F4C168000E782EF /* ExhibitPreviewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitPreviewSettings.swift; sourceTree = "<group>"; };
+		43BA5EFC2F4C168000E782EF /* ExploreHotspotSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHotspotSettings.swift; sourceTree = "<group>"; };
+		43BA5EFE2F4C1F1400E782EF /* SubmarineEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineEntity.swift; sourceTree = "<group>"; };
+		43BA5F002F4C1F1400E782EF /* SubmarineEntity+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubmarineEntity+Configuration.swift"; sourceTree = "<group>"; };
+		43BA5F022F4C253A00E782EF /* SubmarineEntity+Hotspots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubmarineEntity+Hotspots.swift"; sourceTree = "<group>"; };
+		43BA5F052F4C25E200E782EF /* SubmarineImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineImmersiveView.swift; sourceTree = "<group>"; };
+		43BA5F072F4C25E200E782EF /* SubmarineImmersiveToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineImmersiveToggle.swift; sourceTree = "<group>"; };
+		43BA5F252F4C496800E782EF /* GalleryImageWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageWindowView.swift; sourceTree = "<group>"; };
+		43BA5F272F4C4C5700E782EF /* SpatialSceneSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialSceneSupport.swift; sourceTree = "<group>"; };
+		43BA5F2B2F4C502500E782EF /* GalleryImageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageSettings.swift; sourceTree = "<group>"; };
+		43BA5F2D2F4C5C8F00E782EF /* SubmarineRotationGestureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineRotationGestureModifier.swift; sourceTree = "<group>"; };
+		43BA5F2F2F4C831300E782EF /* FavoritesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSectionView.swift; sourceTree = "<group>"; };
+		43BA5F312F4C832500E782EF /* SubmarineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineCard.swift; sourceTree = "<group>"; };
+		43BA5F352F4C928B00E782EF /* SubmarineModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineModelCache.swift; sourceTree = "<group>"; };
+		B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		C200227E29883B3900732240 /* ExploreSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSettings.swift; sourceTree = "<group>"; };
+		C22D1AEE28EB403400CE0F8F /* SubmarineMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubmarineMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22D1AF128EB403400CE0F8F /* SubmarineMuseumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineMuseumApp.swift; sourceTree = "<group>"; };
+		C22D1AF528EB403600CE0F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C22D1AF828EB403600CE0F8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C22D1AFA28EB403600CE0F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25774DA29E23F8D00A75567 /* ExploreModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModule.swift; sourceTree = "<group>"; };
+		C258918E2975EB7E0071BD5F /* SliderGridRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGridRow.swift; sourceTree = "<group>"; };
+		C25A1C9C28EB495E00B0E173 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2A0F2AF29D115150009D46C /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		C2A823612A8591FC006F6AFF /* ExploreToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreToggle.swift; sourceTree = "<group>"; };
+		C2CD36422A3A7682003811D3 /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
+		C2D21552294D210B00634A99 /* ExploreVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVolume.swift; sourceTree = "<group>"; };
+		C2E652D52919EBAB007934BC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C2F31EF729CA8F4E009742AD /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		C2F31EFB29CC01BC009742AD /* TableOfContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfContents.swift; sourceTree = "<group>"; };
+		C2F31EFD29CC02D7009742AD /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		C2F31EFF29CC0858009742AD /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		43BA5EDF2F4BC0F700E782EF /* SubmarineMuseumTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SubmarineMuseumTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43BA5EDB2F4BC0F700E782EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22D1AEB28EB403400CE0F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		434BE94F2F4A868C003833F7 /* Museum */ = {
+			isa = PBXGroup;
+			children = (
+				434BE9502F4A869A003833F7 /* MuseumModels.swift */,
+				434BE9522F4A86A6003833F7 /* SubmarineRepository.swift */,
+				434BE95D2F4A89CD003833F7 /* FavoritesStore.swift */,
+			);
+			path = Museum;
+			sourceTree = "<group>";
+		};
+		434BE9582F4A87CC003833F7 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				434BE9592F4A87E8003833F7 /* CatalogView.swift */,
+				434BE95B2F4A87F1003833F7 /* ExhibitDetailView.swift */,
+				434BE9672F4A8DF8003833F7 /* ExhibitRoute.swift */,
+				434BE9692F4A8E26003833F7 /* StubDetailView.swift */,
+				434BE96B2F4A8E30003833F7 /* SubmarineThumbnail.swift */,
+				43BA5F252F4C496800E782EF /* GalleryImageWindowView.swift */,
+				43BA5F272F4C4C5700E782EF /* SpatialSceneSupport.swift */,
+				43BA5F312F4C832500E782EF /* SubmarineCard.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		434BE9602F4A8A67003833F7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				434BE9612F4A8A6D003833F7 /* SceneIDs.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		434BE96E2F4A9298003833F7 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				437DFC692F4D3D0C007527D9 /* AppIconView.swift */,
+				434BE96F2F4A929E003833F7 /* HotspotComponent.swift */,
+				434BE9712F4A92B3003833F7 /* SubmarineExploreView.swift */,
+				437DFC2B2F4CDA7C007527D9 /* WaypointComponent.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		43BA5F042F4C25D600E782EF /* Immersive */ = {
+			isa = PBXGroup;
+			children = (
+				43BA5F052F4C25E200E782EF /* SubmarineImmersiveView.swift */,
+				43BA5F072F4C25E200E782EF /* SubmarineImmersiveToggle.swift */,
+			);
+			path = Immersive;
+			sourceTree = "<group>";
+		};
+		C22CF1A829721FB100CF2EB7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				43BA5EFE2F4C1F1400E782EF /* SubmarineEntity.swift */,
+				43BA5F002F4C1F1400E782EF /* SubmarineEntity+Configuration.swift */,
+				43BA5F022F4C253A00E782EF /* SubmarineEntity+Hotspots.swift */,
+				437DFC312F4CE4C1007527D9 /* SubmarineEntity+Waypoints.swift */,
+				43BA5F352F4C928B00E782EF /* SubmarineModelCache.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C22CF1AB2972200A00CF2EB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2E652D52919EBAB007934BC /* ViewModel.swift */,
+				C2F31EFD29CC02D7009742AD /* Module.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C22D1AE528EB403400CE0F8F = {
+			isa = PBXGroup;
+			children = (
+				C25A1C9C28EB495E00B0E173 /* README.md */,
+				C22D1AF028EB403400CE0F8F /* SubmarineMuseum */,
+				43BA5EDF2F4BC0F700E782EF /* SubmarineMuseumTests */,
+				C22D1AEF28EB403400CE0F8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C22D1AEF28EB403400CE0F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C22D1AEE28EB403400CE0F8F /* SubmarineMuseum.app */,
+				43BA5EDE2F4BC0F700E782EF /* SubmarineMuseumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C22D1AF028EB403400CE0F8F /* SubmarineMuseum */ = {
+			isa = PBXGroup;
+			children = (
+				C22D1AF128EB403400CE0F8F /* SubmarineMuseumApp.swift */,
+				C2DEDA222996F5ED00F5265B /* Modules */,
+				C25774D929E23F7400A75567 /* ExploreVolume */,
+				C22CF1A829721FB100CF2EB7 /* Entities */,
+				C2589192297625D90071BD5F /* Modifiers */,
+				C22CF1AB2972200A00CF2EB7 /* Model */,
+				C2F2CA322A391CDC00E1C2A2 /* Settings */,
+				C2A51FAE29AB0AEB00217068 /* Resources */,
+				C22D1AFA28EB403600CE0F8F /* Info.plist */,
+				C22D1AF728EB403600CE0F8F /* Preview Content */,
+				B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */,
+				B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */,
+				434BE94F2F4A868C003833F7 /* Museum */,
+				434BE9582F4A87CC003833F7 /* Catalog */,
+				434BE9602F4A8A67003833F7 /* Navigation */,
+				434BE96E2F4A9298003833F7 /* Explore */,
+				43BA5F042F4C25D600E782EF /* Immersive */,
+			);
+			path = SubmarineMuseum;
+			sourceTree = "<group>";
+		};
+		C22D1AF728EB403600CE0F8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C22D1AF828EB403600CE0F8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C25774D929E23F7400A75567 /* ExploreVolume */ = {
+			isa = PBXGroup;
+			children = (
+				C2D21552294D210B00634A99 /* ExploreVolume.swift */,
+				C25774DA29E23F8D00A75567 /* ExploreModule.swift */,
+				C2A823612A8591FC006F6AFF /* ExploreToggle.swift */,
+			);
+			path = ExploreVolume;
+			sourceTree = "<group>";
+		};
+		C2589192297625D90071BD5F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				43BA5EF62F4BC7A100E782EF /* YOffsetModifier.swift */,
+				43BA5F2D2F4C5C8F00E782EF /* SubmarineRotationGestureModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		C2A51FAE29AB0AEB00217068 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C22D1AF528EB403600CE0F8F /* Assets.xcassets */,
+				434BE9542F4A86F1003833F7 /* Submarines.json */,
+				434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2DEDA222996F5ED00F5265B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C2F31EF729CA8F4E009742AD /* Modules.swift */,
+				C2F31EFB29CC01BC009742AD /* TableOfContents.swift */,
+				C2CD36422A3A7682003811D3 /* ModuleCard.swift */,
+				C2F31EFF29CC0858009742AD /* ModuleDetail.swift */,
+				434BE9632F4A8A75003833F7 /* SectionViews.swift */,
+				43BA5F2F2F4C831300E782EF /* FavoritesSectionView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C2F2CA322A391CDC00E1C2A2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0F2AF29D115150009D46C /* SettingsButton.swift */,
+				C200227E29883B3900732240 /* ExploreSettings.swift */,
+				C258918E2975EB7E0071BD5F /* SliderGridRow.swift */,
+				43BA5EF82F4C168000E782EF /* ExploreModelSettings.swift */,
+				43BA5EFA2F4C168000E782EF /* ExhibitPreviewSettings.swift */,
+				43BA5EFC2F4C168000E782EF /* ExploreHotspotSettings.swift */,
+				43BA5F2B2F4C502500E782EF /* GalleryImageSettings.swift */,
+				437DFC2D2F4CDAC4007527D9 /* ExploreWaypointSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43BA5EDD2F4BC0F700E782EF /* SubmarineMuseumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43BA5EE62F4BC0F700E782EF /* Build configuration list for PBXNativeTarget "SubmarineMuseumTests" */;
+			buildPhases = (
+				43BA5EDA2F4BC0F700E782EF /* Sources */,
+				43BA5EDB2F4BC0F700E782EF /* Frameworks */,
+				43BA5EDC2F4BC0F700E782EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43BA5EE32F4BC0F700E782EF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				43BA5EDF2F4BC0F700E782EF /* SubmarineMuseumTests */,
+			);
+			name = SubmarineMuseumTests;
+			packageProductDependencies = (
+			);
+			productName = WorldTests;
+			productReference = 43BA5EDE2F4BC0F700E782EF /* SubmarineMuseumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C22D1AED28EB403400CE0F8F /* SubmarineMuseum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C22D1AFD28EB403600CE0F8F /* Build configuration list for PBXNativeTarget "SubmarineMuseum" */;
+			buildPhases = (
+				C22D1AEA28EB403400CE0F8F /* Sources */,
+				C22D1AEB28EB403400CE0F8F /* Frameworks */,
+				C22D1AEC28EB403400CE0F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SubmarineMuseum;
+			packageProductDependencies = (
+			);
+			productName = HelloGlobe;
+			productReference = C22D1AEE28EB403400CE0F8F /* SubmarineMuseum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C22D1AE628EB403400CE0F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					43BA5EDD2F4BC0F700E782EF = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = C22D1AED28EB403400CE0F8F;
+					};
+					C22D1AED28EB403400CE0F8F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = C22D1AE928EB403400CE0F8F /* Build configuration list for PBXProject "SubmarineMuseum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				fr,
+				ja,
+				zh_CN,
+				ko,
+			);
+			mainGroup = C22D1AE528EB403400CE0F8F;
+			productRefGroup = C22D1AEF28EB403400CE0F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C22D1AED28EB403400CE0F8F /* SubmarineMuseum */,
+				43BA5EDD2F4BC0F700E782EF /* SubmarineMuseumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43BA5EDC2F4BC0F700E782EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22D1AEC28EB403400CE0F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434BE9A22F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */,
+				B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */,
+				C22D1AF928EB403600CE0F8F /* Preview Assets.xcassets in Resources */,
+				B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */,
+				434BE9552F4A86F1003833F7 /* Submarines.json in Resources */,
+				C22D1AF628EB403600CE0F8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43BA5EDA2F4BC0F700E782EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22D1AEA28EB403400CE0F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BA5EF72F4BC7A100E782EF /* YOffsetModifier.swift in Sources */,
+				43BA5EFF2F4C1F1400E782EF /* SubmarineEntity.swift in Sources */,
+				C2D21553294D210B00634A99 /* ExploreVolume.swift in Sources */,
+				C200227F29883B3900732240 /* ExploreSettings.swift in Sources */,
+				434BE9642F4A8A75003833F7 /* SectionViews.swift in Sources */,
+				43BA5EF92F4C168000E782EF /* ExploreModelSettings.swift in Sources */,
+				43BA5EFB2F4C168000E782EF /* ExhibitPreviewSettings.swift in Sources */,
+				43BA5F282F4C4C5700E782EF /* SpatialSceneSupport.swift in Sources */,
+				434BE95E2F4A89CD003833F7 /* FavoritesStore.swift in Sources */,
+				43BA5F012F4C1F1400E782EF /* SubmarineEntity+Configuration.swift in Sources */,
+				434BE96A2F4A8E26003833F7 /* StubDetailView.swift in Sources */,
+				43BA5F322F4C832500E782EF /* SubmarineCard.swift in Sources */,
+				434BE9722F4A92B3003833F7 /* SubmarineExploreView.swift in Sources */,
+				434BE9532F4A86A6003833F7 /* SubmarineRepository.swift in Sources */,
+				434BE9702F4A929E003833F7 /* HotspotComponent.swift in Sources */,
+				434BE9512F4A869A003833F7 /* MuseumModels.swift in Sources */,
+				C2A823622A8591FC006F6AFF /* ExploreToggle.swift in Sources */,
+				437DFC322F4CE4C6007527D9 /* SubmarineEntity+Waypoints.swift in Sources */,
+				43BA5EFD2F4C168000E782EF /* ExploreHotspotSettings.swift in Sources */,
+				43BA5F2E2F4C5C8F00E782EF /* SubmarineRotationGestureModifier.swift in Sources */,
+				43BA5F032F4C253A00E782EF /* SubmarineEntity+Hotspots.swift in Sources */,
+				43BA5F082F4C25E200E782EF /* SubmarineImmersiveToggle.swift in Sources */,
+				C2F31EFE29CC02D7009742AD /* Module.swift in Sources */,
+				437DFC2E2F4CDAC4007527D9 /* ExploreWaypointSettings.swift in Sources */,
+				434BE95A2F4A87E8003833F7 /* CatalogView.swift in Sources */,
+				43BA5F262F4C496800E782EF /* GalleryImageWindowView.swift in Sources */,
+				434BE9622F4A8A6D003833F7 /* SceneIDs.swift in Sources */,
+				43BA5F062F4C25E200E782EF /* SubmarineImmersiveView.swift in Sources */,
+				437DFC2C2F4CDA7C007527D9 /* WaypointComponent.swift in Sources */,
+				C2F31EFC29CC01BC009742AD /* TableOfContents.swift in Sources */,
+				434BE95C2F4A87F1003833F7 /* ExhibitDetailView.swift in Sources */,
+				C2F31EF829CA8F4E009742AD /* Modules.swift in Sources */,
+				C25774DB29E23F8D00A75567 /* ExploreModule.swift in Sources */,
+				43BA5F362F4C928B00E782EF /* SubmarineModelCache.swift in Sources */,
+				C2A0F2B029D115150009D46C /* SettingsButton.swift in Sources */,
+				C22D1AF228EB403400CE0F8F /* SubmarineMuseumApp.swift in Sources */,
+				C2E652D62919EBAB007934BC /* ViewModel.swift in Sources */,
+				434BE96C2F4A8E30003833F7 /* SubmarineThumbnail.swift in Sources */,
+				43BA5F302F4C831300E782EF /* FavoritesSectionView.swift in Sources */,
+				43BA5F2C2F4C502500E782EF /* GalleryImageSettings.swift in Sources */,
+				C258918F2975EB7E0071BD5F /* SliderGridRow.swift in Sources */,
+				C2CD36432A3A7682003811D3 /* ModuleCard.swift in Sources */,
+				434BE9682F4A8DF8003833F7 /* ExhibitRoute.swift in Sources */,
+				C2F31F0029CC0858009742AD /* ModuleDetail.swift in Sources */,
+				437DFC6A2F4D3D0C007527D9 /* AppIconView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43BA5EE32F4BC0F700E782EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C22D1AED28EB403400CE0F8F /* SubmarineMuseum */;
+			targetProxy = 43BA5EE22F4BC0F700E782EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43BA5EE42F4BC0F700E782EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYJM5USL73;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.assignments.WorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmarineMuseum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubmarineMuseum";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		43BA5EE52F4BC0F700E782EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BYJM5USL73;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.assignments.WorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmarineMuseum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubmarineMuseum";
+				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		C22D1AFB28EB403600CE0F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BYJM5USL73;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TREAT_MISSING_SCRIPT_PHASE_OUTPUTS_AS_ERRORS = YES;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		C22D1AFC28EB403600CE0F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BYJM5USL73;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = xros;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TREAT_MISSING_SCRIPT_PHASE_OUTPUTS_AS_ERRORS = YES;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		C22D1AFE28EB403600CE0F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SubmarineMuseum/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assignmenta12t1gwhg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C22D1AFF28EB403600CE0F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SubmarineMuseum/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assignmenta12t1gwhg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43BA5EE62F4BC0F700E782EF /* Build configuration list for PBXNativeTarget "SubmarineMuseumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43BA5EE42F4BC0F700E782EF /* Debug */,
+				43BA5EE52F4BC0F700E782EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22D1AE928EB403400CE0F8F /* Build configuration list for PBXProject "SubmarineMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22D1AFB28EB403600CE0F8F /* Debug */,
+				C22D1AFC28EB403600CE0F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C22D1AFD28EB403600CE0F8F /* Build configuration list for PBXNativeTarget "SubmarineMuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C22D1AFE28EB403600CE0F8F /* Debug */,
+				C22D1AFF28EB403600CE0F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C22D1AE628EB403400CE0F8F /* Project object */;
+}
