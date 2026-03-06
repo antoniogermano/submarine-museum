@@ -14,6 +14,7 @@ struct SubmarineImmersiveView: View {
     @State private var submarine: Submarine?
     @State private var submarineEntity: SubmarineEntity?
     @State private var defaultRootTransform: Transform = .identity
+    @State private var defaultWaypointID: String?
     @State private var selectedWaypointID: String?
     @State private var isShowingWaypointPicker: Bool = false
     @State private var waypointTeleportTask: Task<Void, Never>?
@@ -63,12 +64,6 @@ struct SubmarineImmersiveView: View {
         .onChange(of: model.immersiveSubmarine.waypointOverrides) { _, _ in
             applyMarkerConfiguration()
         }
-        .onChange(of: model.exploreSubmarine.showsHotspots) { _, _ in
-            applyMarkerConfiguration()
-        }
-        .onChange(of: model.exploreSubmarine.showsWaypoints) { _, _ in
-            applyMarkerConfiguration()
-        }
         .onChange(of: model.exploreSubmarine.hotspotOverrides) { _, _ in
             applyMarkerConfiguration()
         }
@@ -101,10 +96,17 @@ struct SubmarineImmersiveView: View {
         content.add(entity)
         self.submarine = submarine
         submarineEntity = entity
-        defaultRootTransform = entity.transform
-        selectedWaypointID = submarine.waypoints.first?.id
-        if model.immersiveSelectedWaypointID == nil {
-            model.immersiveSelectedWaypointID = submarine.waypoints.first?.id
+        let defaultWaypoint = submarine.waypoints.first
+        defaultWaypointID = defaultWaypoint?.id
+        selectedWaypointID = defaultWaypoint?.id
+        model.immersiveSelectedWaypointID = defaultWaypoint?.id
+
+        if let defaultWaypoint,
+           let defaultTransform = destinationTransform(for: defaultWaypoint) {
+            defaultRootTransform = defaultTransform
+            entity.transform = defaultTransform
+        } else {
+            defaultRootTransform = entity.transform
         }
         refreshDebugReadout()
         applyMarkerConfiguration()
@@ -129,12 +131,12 @@ struct SubmarineImmersiveView: View {
             }
 
             Toggle("Show Hotspots", isOn: Binding(
-                get: { model.exploreSubmarine.showsHotspots },
-                set: { model.exploreSubmarine.showsHotspots = $0 }
+                get: { model.immersiveSubmarine.showsHotspots },
+                set: { model.immersiveSubmarine.showsHotspots = $0 }
             ))
             Toggle("Show Waypoints", isOn: Binding(
-                get: { model.exploreSubmarine.showsWaypoints },
-                set: { model.exploreSubmarine.showsWaypoints = $0 }
+                get: { model.immersiveSubmarine.showsWaypoints },
+                set: { model.immersiveSubmarine.showsWaypoints = $0 }
             ))
 
             Divider()
@@ -175,28 +177,14 @@ struct SubmarineImmersiveView: View {
     }
 
     private func teleportToWaypoint(_ waypoint: Waypoint) {
-        guard let submarineEntity else { return }
+        guard
+            let submarineEntity,
+            let destination = destinationTransform(for: waypoint)
+        else {
+            return
+        }
 
         waypointTeleportTask?.cancel()
-
-        // Waypoint orientation is not present in current JSON, so infer a local yaw fallback.
-        let waypointLocal = Transform(
-            scale: .one,
-            rotation: inferredWaypointLocalRotation(position: waypointPosition(for: waypoint)),
-            translation: waypointPosition(for: waypoint)
-        )
-
-        // Target pose relative to the immersive scene origin, which starts at the user location.
-        // This places the selected waypoint comfortably in front of the viewer.
-        let targetPose = Transform(
-            scale: .one,
-            rotation: defaultRootTransform.rotation,
-            translation: SIMD3<Float>(0, -0.1, -1.25)
-        )
-
-        let targetMatrix = targetPose.matrix * simd_inverse(waypointLocal.matrix)
-        var destination = Transform(matrix: targetMatrix)
-        destination.scale = SIMD3<Float>(repeating: 1)
 
         waypointTeleportTask = Task { @MainActor in
             await animateSubmarineRoot(
@@ -236,6 +224,8 @@ struct SubmarineImmersiveView: View {
     private func resetToDefaultPlacement() {
         guard let submarineEntity else { return }
         waypointTeleportTask?.cancel()
+        selectedWaypointID = defaultWaypointID
+        model.immersiveSelectedWaypointID = defaultWaypointID
 
         waypointTeleportTask = Task { @MainActor in
             await animateSubmarineRoot(
@@ -245,6 +235,28 @@ struct SubmarineImmersiveView: View {
             )
             refreshDebugReadout()
         }
+    }
+
+    private func destinationTransform(for waypoint: Waypoint) -> Transform? {
+        // Waypoint orientation is not present in current JSON, so infer a local yaw fallback.
+        let waypointLocal = Transform(
+            scale: .one,
+            rotation: inferredWaypointLocalRotation(position: waypointPosition(for: waypoint)),
+            translation: waypointPosition(for: waypoint)
+        )
+
+        // Target pose relative to the immersive scene origin, which starts at the user location.
+        // This places the selected waypoint comfortably in front of the viewer.
+        let targetPose = Transform(
+            scale: .one,
+            rotation: immersiveConfiguration.initialRotation,
+            translation: SIMD3<Float>(0, -0.1, -1.25)
+        )
+
+        let targetMatrix = targetPose.matrix * simd_inverse(waypointLocal.matrix)
+        var destination = Transform(matrix: targetMatrix)
+        destination.scale = SIMD3<Float>(repeating: 1)
+        return destination
     }
 
     private func waypointPosition(for waypoint: Waypoint) -> SIMD3<Float> {
@@ -312,11 +324,22 @@ struct SubmarineImmersiveView: View {
 
     private var immersiveConfiguration: SubmarineEntity.Configuration {
         var configuration = model.immersiveSubmarine
-        configuration.showsHotspots = model.exploreSubmarine.showsHotspots
         configuration.hotspotOverrides = model.exploreSubmarine.hotspotOverrides
-        configuration.showsWaypoints = model.exploreSubmarine.showsWaypoints
         configuration.waypointOverrides = model.exploreSubmarine.waypointOverrides
         configuration.scale = 1
         return configuration
+    }
+}
+
+private extension SubmarineEntity.Configuration {
+    var initialRotation: simd_quatf {
+        let yaw = yawDegrees * .pi / 180
+        let pitch = pitchDegrees * .pi / 180
+        let roll = rollDegrees * .pi / 180
+
+        let yawRotation = simd_quatf(angle: yaw, axis: [0, 1, 0])
+        let pitchRotation = simd_quatf(angle: pitch, axis: [1, 0, 0])
+        let rollRotation = simd_quatf(angle: roll, axis: [0, 0, 1])
+        return yawRotation * pitchRotation * rollRotation
     }
 }

@@ -58,8 +58,8 @@ struct ImmersiveSectionView: View {
                     .buttonStyle(.bordered)
                 }
 
-                Toggle("Show Hotspots", isOn: $model.exploreSubmarine.showsHotspots)
-                Toggle("Show Waypoints", isOn: $model.exploreSubmarine.showsWaypoints)
+                Toggle("Show Hotspots", isOn: $model.immersiveSubmarine.showsHotspots)
+                Toggle("Show Waypoints", isOn: $model.immersiveSubmarine.showsWaypoints)
             } else {
                 Text("Enter immersive mode to access waypoint picker and scene controls.")
                     .foregroundStyle(.secondary)

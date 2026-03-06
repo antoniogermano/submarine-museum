@@ -25,7 +25,8 @@ extension SubmarineEntity {
         static var exploreDefault: Configuration = .init(
             scale: 0.00628,
             yawDegrees: -46.5,
-            showsHotspots: true
+            showsHotspots: true,
+            showsWaypoints: false
         )
 
         static var previewDefault: Configuration = .init(

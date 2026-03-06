@@ -25,6 +25,12 @@ struct SubmarineEntityConfigurationTests {
         #expect(preview.yawDegrees == 90)
         #expect(preview.showsHotspots == false)
         #expect(preview.showsWaypoints == false)
+
+        let immersive = SubmarineEntity.Configuration.immersiveDefault
+        #expect(immersive.scale == 0.12)
+        #expect(immersive.yawDegrees == -45)
+        #expect(immersive.showsHotspots == false)
+        #expect(immersive.showsWaypoints == false)
     }
 
     @Test
