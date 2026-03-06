@@ -4,5 +4,7 @@
 <dict>
 	<key>UINativeSizeClass</key>
 	<integer>1</integer>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
