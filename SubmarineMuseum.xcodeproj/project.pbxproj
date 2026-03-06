@@ -20,7 +20,6 @@
 		434BE96C2F4A8E30003833F7 /* SubmarineThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE96B2F4A8E30003833F7 /* SubmarineThumbnail.swift */; };
 		434BE9702F4A929E003833F7 /* HotspotComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE96F2F4A929E003833F7 /* HotspotComponent.swift */; };
 		434BE9722F4A92B3003833F7 /* SubmarineExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434BE9712F4A92B3003833F7 /* SubmarineExploreView.swift */; };
-		434BE9A22F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */; };
 		437DFC2C2F4CDA7C007527D9 /* WaypointComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC2B2F4CDA7C007527D9 /* WaypointComponent.swift */; };
 		437DFC2E2F4CDAC4007527D9 /* ExploreWaypointSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC2D2F4CDAC4007527D9 /* ExploreWaypointSettings.swift */; };
 		437DFC322F4CE4C6007527D9 /* SubmarineEntity+Waypoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437DFC312F4CE4C1007527D9 /* SubmarineEntity+Waypoints.swift */; };
@@ -41,6 +40,7 @@
 		43BA5F302F4C831300E782EF /* FavoritesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F2F2F4C831300E782EF /* FavoritesSectionView.swift */; };
 		43BA5F322F4C832500E782EF /* SubmarineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F312F4C832500E782EF /* SubmarineCard.swift */; };
 		43BA5F362F4C928B00E782EF /* SubmarineModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BA5F352F4C928B00E782EF /* SubmarineModelCache.swift */; };
+		43C5F9542F5B29E500476B9E /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 43C5F9532F5B29E500476B9E /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */; };
 		B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */; };
 		B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */; };
 		C200227F29883B3900732240 /* ExploreSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200227E29883B3900732240 /* ExploreSettings.swift */; };
@@ -84,7 +84,6 @@
 		434BE96B2F4A8E30003833F7 /* SubmarineThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineThumbnail.swift; sourceTree = "<group>"; };
 		434BE96F2F4A929E003833F7 /* HotspotComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotComponent.swift; sourceTree = "<group>"; };
 		434BE9712F4A92B3003833F7 /* SubmarineExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineExploreView.swift; sourceTree = "<group>"; };
-		434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz"; sourceTree = "<group>"; };
 		437DFC2B2F4CDA7C007527D9 /* WaypointComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointComponent.swift; sourceTree = "<group>"; };
 		437DFC2D2F4CDAC4007527D9 /* ExploreWaypointSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreWaypointSettings.swift; sourceTree = "<group>"; };
 		437DFC312F4CE4C1007527D9 /* SubmarineEntity+Waypoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubmarineEntity+Waypoints.swift"; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		43BA5F2F2F4C831300E782EF /* FavoritesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesSectionView.swift; sourceTree = "<group>"; };
 		43BA5F312F4C832500E782EF /* SubmarineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineCard.swift; sourceTree = "<group>"; };
 		43BA5F352F4C928B00E782EF /* SubmarineModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmarineModelCache.swift; sourceTree = "<group>"; };
+		43C5F9532F5B29E500476B9E /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz"; sourceTree = "<group>"; };
 		B0B8C3EB2BDC3D0900704A2C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		B0C7C5452BF5DA0900ECE452 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		C200227E29883B3900732240 /* ExploreSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSettings.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 			children = (
 				C22D1AF528EB403600CE0F8F /* Assets.xcassets */,
 				434BE9542F4A86F1003833F7 /* Submarines.json */,
-				434BE9A12F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */,
+				43C5F9532F5B29E500476B9E /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -433,11 +433,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434BE9A22F4B94BF003833F7 /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */,
 				B0C7C5462BF5DA0900ECE452 /* InfoPlist.xcstrings in Resources */,
 				C22D1AF928EB403600CE0F8F /* Preview Assets.xcassets in Resources */,
 				B0B8C3EC2BDC3D0900704A2C /* Localizable.xcstrings in Resources */,
 				434BE9552F4A86F1003833F7 /* Submarines.json in Resources */,
+				43C5F9542F5B29E500476B9E /* USS_Gato_SS-212_Submarine_Displayed_on_Concrete_Blocks_SC_max_vray.usdz in Resources */,
 				C22D1AF628EB403600CE0F8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +526,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.assignments.WorldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.samples.SubmarineMuseumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -535,9 +535,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmarineMuseum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubmarineMuseum";
-				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
 		};
@@ -552,7 +550,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.assignments.WorldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.samples.SubmarineMuseumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
@@ -560,9 +558,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubmarineMuseum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubmarineMuseum";
-				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
 		};
@@ -713,11 +709,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SubmarineMuseum/Preview Content\"";
+				DEVELOPMENT_TEAM = BYJM5USL73;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Submarine Museum";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -725,7 +723,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.assignmenta12t1gwhg;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.SubmarineMuseum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = xros;
@@ -745,11 +743,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SubmarineMuseum/Preview Content\"";
+				DEVELOPMENT_TEAM = BYJM5USL73;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Submarine Museum";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -757,7 +757,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.assignmenta12t1gwhg;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoniogermano.SubmarineMuseum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = xros;
